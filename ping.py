@@ -75,7 +75,7 @@ def append_row(path: Path, row: dict) -> None:
 
 
 def main() -> int:
-    host = os.environ.get("MC_HOST", "").strip()
+    host = os.environ.get("MC_HOST", "mc.oomfsmp.com").strip()
     if not host:
         print("MC_HOST is not set", file=sys.stderr)
         return 1
